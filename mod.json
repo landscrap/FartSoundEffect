@@ -1,14 +1,14 @@
 {
-	"geode": "4.10.2",
+	"geode": "5.0.0",
 	"gd": {
-		"win": "2.2074",
-		"android": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074"
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
 	},
 	"id": "popcorn.fartsoundeffect",
 	"name": "FartSoundEffect",
-	"version": "v1.0.0",
+	"version": "v0.0.1",
 	"developer": "popcorn",
 	"description": "everyone needs to take a shit break",
 	"dependencies": {
