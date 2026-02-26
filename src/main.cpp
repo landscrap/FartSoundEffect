@@ -10,7 +10,8 @@ class $modify(FartMenuLayer, MenuLayer) {
         if (!MenuLayer::init()) return false;
 
         auto sprite = CircleButtonSprite::createWithSprite("buttonthing.png"_spr, .9, CircleBaseColor::Green, CircleBaseSize::MediumAlt);
-        sprite->setScale(0.5f);
+
+        auto screenSize = CCDirector::sharedDirector()->getWinSize();
 
         auto button = CCMenuItemSpriteExtra::create(
             sprite,
@@ -18,7 +19,7 @@ class $modify(FartMenuLayer, MenuLayer) {
             menu_selector(FartMenuLayer::onFart)
         );
         button->setID("fart-button"_spr);
-        button->setPosition({ 0, 0.7 });
+        sprite->setPosition({ 0, screenSize.height / 2 });
 
         if (auto menu = this->getChildByID("bottom-menu")) {
             menu->addChild(button);
