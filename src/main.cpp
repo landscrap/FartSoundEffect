@@ -19,6 +19,7 @@ class $modify(FartMenuLayer, MenuLayer) {
             menu_selector(FartMenuLayer::onFart)
         );
         button->setID("fart-button"_spr);
+        sprite->setAnchorPoint({0.0f, 0.5f});  
         sprite->setPosition({ 0, screenSize.height / 2 });
 
         if (auto menu = this->getChildByID("bottom-menu")) {
