@@ -9,7 +9,7 @@ class $modify(FartMenuLayer, MenuLayer) {
     bool init() {
         if (!MenuLayer::init()) return false;
 
-        auto sprite = CCSprite::create("buttonthing.png"_spr);
+        auto sprite = CircleButtonSprite::createWithSprite("buttonthing.png"_spr, .9, CircleBaseColor::Green, CircleBaseSize::MediumAlt);
         sprite->setScale(0.5f);
 
         auto button = CCMenuItemSpriteExtra::create(
@@ -18,6 +18,7 @@ class $modify(FartMenuLayer, MenuLayer) {
             menu_selector(FartMenuLayer::onFart)
         );
         button->setID("fart-button"_spr);
+        button->setPosition({ 0, 0.7 });
 
         if (auto menu = this->getChildByID("bottom-menu")) {
             menu->addChild(button);
