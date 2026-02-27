@@ -8,7 +8,7 @@
 	},
 	"id": "popcorn.fartsoundeffect",
 	"name": "FartSoundEffect",
-	"version": "v1.0.2",
+	"version": "v1.0.3-alpha1",
 	"developer": "popcorn",
 	"description": "everyone needs to take a shit break",
 	"dependencies": {
